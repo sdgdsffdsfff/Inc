@@ -1,8 +1,8 @@
 {
   "name": "inc",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "inc.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "node /usr/local/lib/node_modules/istanbul/lib/cli.js cover _mocha ./test/**/v8.*.test.js",
     "build": "webpack --config webpack.config.js"
@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/mt-hfe/Inc#readme",
   "devDependencies": {
+    "babel-core": "6.*",
+    "babel-loader": "6.*",
+    "babel-plugin-transform-object-assign": "6.*",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-loose": "7.*",
+    "babel-runtime": "6.*",
     "chai": "^3.5.0",
     "eslint-config-hfe": "^2.2.3",
     "eslint-plugin-html": "^1.7.0",
